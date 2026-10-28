@@ -1,3 +1,4 @@
+import { FaWhatsapp } from "react-icons/fa6";
 import { PHONE } from "../config";
 
 export default function WhatsAppFloat() {
@@ -7,9 +8,9 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-black shadow-lg transition hover:scale-105"
+      className="fixed bottom-5 right-5 z-50 animate-bounce rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-black shadow-lg"
     >
-      WhatsApp
+      <FaWhatsapp className="text-2xl"/>
     </a>
   );
 }

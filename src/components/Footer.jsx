@@ -1,4 +1,4 @@
-import { BRAND } from "../config";
+import { BRAND,BRAND_FULL } from "../config";
 
 export default function Footer() {
   return (
@@ -7,9 +7,9 @@ export default function Footer() {
         <a href="#top" className="font-serif text-xl font-semibold">
           {BRAND}<span className="text-accent">.</span>
         </a>
-        <p className="opacity-60">
-          © {new Date().getFullYear()} {BRAND}. All rights reserved.
-        </p>
+       <p className="opacity-60">
+  © {new Date().getFullYear()} {BRAND_FULL}. All rights reserved.
+</p>
       </div>
     </footer>
   );

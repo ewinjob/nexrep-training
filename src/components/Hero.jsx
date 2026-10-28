@@ -17,7 +17,7 @@ function Hero() {
       </p>
       <a
         href="#enquiry"
-        className="mt-10 inline-block rounded-full bg-accent px-8 py-3 font-medium text-ink"
+        className="mt-10 inline-block rounded-lg bg-accent px-8 hover:rounded-xl hover:text-accent  hover:bg-accent/10 transition-color duration-200 ease-in-out  py-3 font-medium text-ink"
       >
         Book a free call
       </a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { href } from 'react-router-dom'
-import { BRAND } from '../config'
+import { BRAND, BRAND_FULL } from "../config";
 
 
 const links = [
@@ -29,12 +29,11 @@ function Navbar() {
           ))}
         </ul>
 
-        <a
-          href="#enquiry"
-          className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-ink"
-        >
-          Enquire
-        </a>
+      <a
+  href="#enquiry"
+  className="rounded-full border border-accent bg-accent px-5 py-2 text-sm font-medium text-ink transition-colors duration-200 ease-in-out hover:bg-transparent hover:text-accent">
+      Enquire
+     </a>
       </nav>
     </header>
     </>

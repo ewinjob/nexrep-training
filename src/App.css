@@ -1,0 +1,14 @@
+@keyframes wa-bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  70% { transform: translateY(-14px); }
+  80% { transform: translateY(0); }
+  90% { transform: translateY(-6px); }
+}
+
+.wa-bounce {
+  animation: wa-bounce 3s ease-in-out infinite;
+}
+
+.wa-bounce:hover {
+  animation: none;
+}
