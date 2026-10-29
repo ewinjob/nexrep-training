@@ -4,7 +4,7 @@ function Hero() {
   return (
     <>
 
-         <section id="top" className="mx-auto max-w-6xl px-6 py-28 md:py-40">
+        <section id="top" className="mx-auto max-w-6xl px-6 pb-28 pt-40 md:pb-40 md:pt-52">
       <p className="mb-6 text-sm uppercase tracking-widest opacity-60">
         01 / The philosophy
       </p>

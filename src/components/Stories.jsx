@@ -1,6 +1,15 @@
 import { stories } from "../data/stories";
 
 export default function Stories() {
+
+  //   const [stories, setStories] = useState([]);
+
+  //   useEffect(() => {
+  // client
+  //   .fetch(`*[_type == "testimonial"]{name, location, quote}`)
+  //   .then(setStories);
+  //       }, []);
+
   return (
     <section id="stories" className="mx-auto max-w-6xl px-6 py-24">
       <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
