@@ -1,12 +1,12 @@
 export const coaches = [
   {
-    name: "Coach Name One",
-    role: "Head Coach · Strength & Conditioning",
-    bio: "Short 1-2 line intro about experience and certifications.",
+    name: "Big V.",
+    role: "General Health & Fitness | Comp Prep",
+    bio: `IFBB National champion Specialising in bodybuilding, stage preparation, and advanced physique development.`
   },
   {
-    name: "Coach Name Two",
-    role: "Nutrition & Mobility Coach",
-    bio: "Short 1-2 line intro about experience and certifications.",
+    name: " D Magician ",
+    role: "Cert IV in Fitness | General Health & Fitness | Lifestyle Transformation Specialist",
+    bio: "Transforming more than just physiques — building stronger bodies, healthier habits, and better lifestyles. Real coaching, lasting changes, and a new level of confidence.",
   },
 ];

@@ -9,11 +9,10 @@ function Hero() {
         01 / The philosophy
       </p>
       <h1 className="font-serif text-6xl leading-none md:text-8xl">
-        Built for <em className="text-accent">more.</em>
+       Trust humans<em className="text-accent">,not Ai</em>
       </h1>
       <p className="mt-8 max-w-xl text-lg opacity-70">
-        Private online coaching for people who want their strength to show up
-        everywhere, wherever in the world they live.
+        No AI can replace human connection. At NEXREP Training, get real coaching, genuine support, and results built together.
       </p>
       <a
         href="#enquiry"

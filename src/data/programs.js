@@ -2,11 +2,12 @@ export const programs = [
   {
     id: "01",
     title: "Private coaching",
-    desc: "1:1 training built around your body, schedule, and goals.",
+    desc: "One-on-one coaching in the gym, tailored to your body, fitness level, and goals.",
     points: [
-      "Personalized weekly programming",
-      "Movement and strength assessment",
-      "Coach access between sessions",
+      " Personalised workout plans",
+      "Hands-on coaching on technique and form",
+      "Strength, muscle-building, and fitness progression",
+      "Ongoing support and accountability",
     ],
   },
   {

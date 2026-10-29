@@ -24,7 +24,7 @@ export default function ProgramCard({ id, title, desc, points }) {
         href={`https://wa.me/${PHONE}?text=${msg}`}
         target="_blank"
         rel="noreferrer"
-        className="mt-8 inline-block self-start rounded-full border border-white/30 px-5 py-2 text-sm transition hover:bg-accent hover:text-ink"
+        className="mt-8 inline-block self-start rounded-full border border-white/30 px-5 py-2 text-sm transition-color duration-500 hover:bg-accent hover:text-ink"
       >
         Enquire →
       </a>
