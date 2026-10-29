@@ -39,7 +39,7 @@ export default function Stories() {
                       
              <blockquote
   key={i}
-  className="mr-6 w-80 shrink-0 rounded-2xl bg-white/5 p-8 md:w-32rem"
+  className="mr-6 w-96 shrink-0 rounded-2xl bg-white/5 p-8 md:w-32rem"
 >
   <p className="font-serif text-lg leading-relaxed">{s.dis}</p>
   <p className="font-serif text-lg leading-relaxed">{s.quote}</p>
