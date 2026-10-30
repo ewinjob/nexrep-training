@@ -14,13 +14,13 @@ export default function Coaches() {
         {coaches.map((c) => (
           <article
             key={c.name}
-            className="rounded-2xl border border-white/10 p-6 transition-colors duration-300 hover:border-accent/60"
+            className="rounded-2xl border border-white/10 p-6  transition-colors duration-300 hover:border-accent/60"
           >
             {c.photo ? (
              <img
           src={c.photo}
               alt={c.name}
-            className="h-fit w-fit rounded-xl bg-white/5 object-cover"
+            className="h-fit w-full rounded-xl bg-white/5 object-cover"
              />
             ) : (
               <div className="flex h-72 items-center justify-center rounded-xl bg-white/5 font-serif text-6xl text-accent">

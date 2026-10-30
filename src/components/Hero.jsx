@@ -9,7 +9,7 @@ function Hero() {
         01 / The philosophy
       </p>
       <h1 className="font-serif text-6xl leading-none md:text-8xl">
-       Trust humans<em className="text-accent">,not Ai</em>
+       Trust humans<em className="text-accent">,not AI</em>
       </h1>
       <p className="mt-8 max-w-xl text-lg opacity-70">
         No AI can replace human connection. At NEXREP Training, get real coaching, genuine support, and results built together.
