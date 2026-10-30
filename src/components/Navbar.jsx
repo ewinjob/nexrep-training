@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import { BRAND } from "../config";
 
 const links = [
@@ -12,7 +11,6 @@ const links = [
 export default function Navbar() {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const sections = links
@@ -42,31 +40,30 @@ export default function Navbar() {
     };
   }, []);
 
-  const solid = scrolled || open;
-
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        solid
+        scrolled
           ? "border-b border-white/10 bg-ink/90 shadow-lg shadow-black/20 backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <nav
-        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-all duration-300 ${
-          scrolled ? "py-3" : "py-5"
+        className={`mx-auto flex max-w-6xl flex-wrap items-center justify-between px-6 transition-all duration-300 ${
+          scrolled ? "py-2 md:py-3" : "py-3 md:py-5"
         }`}
       >
-        <a href="#top" className="font-serif text-xl font-semibold">
+        <a href="#top" className="order-1 font-serif text-xl font-semibold">
           {BRAND}<span className="text-accent">.</span>
         </a>
 
-        <ul className="hidden gap-8 text-sm md:flex">
+        {/* Links: second row on phones, centre on laptops */}
+        <ul className="order-3 mt-2 flex w-full justify-between text-sm md:order-2 md:mt-0 md:w-auto md:gap-8">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className={`transition-colors duration-300 hover:text-accent ${
+                className={`block py-1 transition-colors duration-300 hover:text-accent ${
                   active === l.href ? "text-accent" : "opacity-70"
                 }`}
               >
@@ -76,40 +73,13 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="#enquiry"
-            className="rounded-full border border-accent bg-accent px-5 py-2 text-sm font-medium text-ink transition-colors duration-300 hover:bg-transparent hover:text-accent"
-          >
-            Enquire
-          </a>
-          <button
-            onClick={() => setOpen(!open)}
-            aria-label="Toggle menu"
-            className="text-2xl md:hidden"
-          >
-            {open ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+        <a
+          href="#enquiry"
+          className="order-2 rounded-full border border-accent bg-accent px-5 py-2 text-sm font-medium text-ink transition-colors duration-300 hover:bg-transparent hover:text-accent md:order-3"
+        >
+          Enquire
+        </a>
       </nav>
-
-      {open && (
-        <ul className="flex flex-col border-t border-white/10 px-6 py-3 md:hidden">
-          {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className={`block py-3 text-lg ${
-                  active === l.href ? "text-accent" : "opacity-80"
-                }`}
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
     </header>
   );
 }
