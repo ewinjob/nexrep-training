@@ -4,7 +4,7 @@ export const programs = [
     title: "Private coaching",
     desc: "One-on-one coaching in the gym, tailored to your body, fitness level, and goals.",
     points: [
-      " Personalised workout plans",
+      " Personalized workout plans",
       "Hands-on coaching on technique and form",
       "Strength, muscle-building, and fitness progression",
       "Ongoing support and accountability",
