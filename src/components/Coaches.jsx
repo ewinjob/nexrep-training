@@ -10,7 +10,7 @@ export default function Coaches() {
         Coached by <em className="text-accent">experts.</em>
       </h2>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-2 ">
+      <div className="mt-14 grid gap-10 md:grid-cols-2 ">
         {coaches.map((c) => (
           <article
             key={c.name}
