@@ -1,16 +1,18 @@
+import CountUp from "./CountUp";
+
 const stats = [
-  { value: "12+", label: "Years of coaching" },
-  { value: "2.4k", label: "Milestones reached" },
-  { value: "1", label: "Standard: your best" },
+  { end: 11, suffix: "+", label: "Years of coaching" },
+  { end: 2.2, decimals: 1, suffix: "k", label: "Milestones reached" },
+  { end: 1, label: "Standard: your best" },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
       <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
         01 / Our philosophy
       </p>
-      <h2 className="font-serif text-5xl md:text-6xl">
+      <h2 className="font-serif text-4xl md:text-6xl">
         Discipline is <em className="text-accent">freedom.</em>
       </h2>
 
@@ -24,7 +26,13 @@ export default function About() {
         <dl className="grid grid-cols-3 gap-4">
           {stats.map((s) => (
             <div key={s.label} className="border-t border-white/20 pt-4">
-              <dt className="font-serif text-4xl text-accent">{s.value}</dt>
+              <dt className="font-serif text-3xl text-accent md:text-4xl">
+                <CountUp
+                  end={s.end}
+                  decimals={s.decimals}
+                  suffix={s.suffix}
+                />
+              </dt>
               <dd className="mt-2 text-xs opacity-60">{s.label}</dd>
             </div>
           ))}

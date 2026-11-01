@@ -17,7 +17,7 @@ export default function EnqButton({ program = "" }) {
 </a>
       <a
         href={`mailto:${EMAIL}?subject=Training enquiry&body=${msg}`}
-        className="rounded-full border border-white/30 px-8 py-3 font-medium transition-colors duration-300  hover:bg-accent/50 hover:text-black"
+        className="rounded-full border  border-white/30 px-8 py-3 font-medium transition-colors duration-300  hover:bg-accent/50 hover:text-black"
       >
         Email us
       </a>
