@@ -1,10 +1,13 @@
 import { BRAND, BRAND_FULL, INSTAGRAM } from "../config";
 import { SiInstagram } from "react-icons/si";
+import Reveal from "./Reveal";
 
 export default function Footer() {
   return (
+    <>
     <footer className="border-t border-white/10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 py-8 text-center text-sm md:flex-row md:justify-between md:py-10 md:pr-24 md:text-left xl:pr-6">
+  <Reveal>
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 py-8 text-center text-sm md:flex-row md:justify-between md:py-10 md:pr-24 md:text-left xl:pr-6">
         <a href="#top" className="font-serif text-xl font-semibold">
           {BRAND}
           <span className="text-accent">.</span>
@@ -24,6 +27,8 @@ export default function Footer() {
           <SiInstagram />
         </a>
       </div>
+  </Reveal>
     </footer>
+    </>
   );
 }

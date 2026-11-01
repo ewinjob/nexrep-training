@@ -1,10 +1,12 @@
 import { programs } from "../data/programs";
 import ProgramCard from "../components/ProgarmCard";
+import Reveal from "./Reveal";
 
 
 export default function Programs() {
   return (
     <section id="programs" className="mx-auto max-w-6xl px-6 py-24">
+      <Reveal>
       <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
         02 / Training programs
       </p>
@@ -15,12 +17,15 @@ export default function Programs() {
         Three ways to train. One standard of coaching. Choose the structure
         that makes your next level inevitable.
       </p>
+      </Reveal>
 
+    <Reveal>
       <div className="mt-14 grid gap-6 md:grid-cols-3">
         {programs.map((p) => (
           <ProgramCard key={p.id} {...p} />
         ))}
       </div>
+      </Reveal>
     </section>
   );
 }

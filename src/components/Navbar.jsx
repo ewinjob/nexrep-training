@@ -55,6 +55,7 @@ const lastY = useRef(0);
   }, []);
 
   return (
+   <>
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
@@ -99,5 +100,7 @@ const lastY = useRef(0);
 </a>
       </nav>
     </header>
+   
+   </>
   );
 }

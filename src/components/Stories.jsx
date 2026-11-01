@@ -1,4 +1,5 @@
 import { stories } from "../data/stories";
+import Reveal from "./Reveal";
 
 export default function Stories() {
 
@@ -13,8 +14,9 @@ export default function Stories() {
   //       }, []);
 
   return (
-     
+    <>
      <section id="stories" className="py-16 md:py-24">
+    <Reveal>
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
           04 / Member stories
@@ -23,6 +25,7 @@ export default function Stories() {
           Real people. <em className="text-accent">Real results.</em>
         </h2>
       </div>
+      </Reveal>
 
       <div
         className="marquee mt-14 overflow-hidden"
@@ -33,10 +36,12 @@ export default function Stories() {
             "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
         }}
       >
+
+        <Reveal> 
         <div className="marquee-track flex w-max">
           {loop.map((s, i) => (
              
-                      
+                    
              <blockquote
   key={i}
   className="mr-6 w-100 shrink-0 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:w-32rem"
@@ -51,8 +56,11 @@ export default function Stories() {
                
           ))}
         </div>
+        </Reveal> 
       </div>
     </section> 
+
+    </>
 
   );
 }

@@ -2,6 +2,7 @@
 import { Routes,Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
+import Reveal from './components/Reveal'
 
 function App() {
   

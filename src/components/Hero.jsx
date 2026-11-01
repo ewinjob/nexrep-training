@@ -1,6 +1,26 @@
-import React from 'react'
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
+import React, { useRef } from 'react'
+
 
 function Hero() {
+
+  const root = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".hero-item", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.15,
+        delay: 0.2,
+      });
+    },
+    { scope: root }
+  );
+
   return (
     <>
 

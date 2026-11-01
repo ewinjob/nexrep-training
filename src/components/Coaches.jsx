@@ -1,8 +1,11 @@
 import { coaches } from "../data/coaches";
+import Reveal from "./Reveal";
 
 export default function Coaches() {
   return (
-    <section id="coaches" className="mx-auto max-w-6xl px-6 py-24">
+         <>
+             <section id="coaches" className="mx-auto max-w-6xl px-6 py-24">
+      <Reveal>
       <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
         03 / Meet your team
       </p>
@@ -34,6 +37,8 @@ export default function Coaches() {
           </article>
         ))}
       </div>
+      </Reveal>
     </section>
+    </>
   );
 }

@@ -1,9 +1,14 @@
 import EnquiryButtons from "../components/EnqButton";
 import { EMAIL } from "../config";
+import Reveal from "./Reveal";
+
 
 export default function Enquiry() {
   return (
+<>
+
     <section id="enquiry" className="mx-auto max-w-6xl px-6 py-24">
+      <Reveal>
       <div className="rounded-3xl border border-white/10 bg-white/5 px-8 py-16 backdrop-blur-sm md:px-16">
         <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
           05 / Get started
@@ -24,6 +29,9 @@ export default function Enquiry() {
           Or write to us at <span className="text-paper">{EMAIL}</span>
         </p>
       </div>
+      </Reveal>
     </section>
+
+</>
   );
 }

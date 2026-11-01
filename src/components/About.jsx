@@ -1,4 +1,5 @@
 import CountUp from "./CountUp";
+import Reveal from "./Reveal";
 
 const stats = [
   { end: 11, suffix: "+", label: "Years of coaching" },
@@ -8,7 +9,10 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <>
+        
+  <Reveal>
+            <section id="about" className="mx-auto max-w-6xl px-6 py-16 md:py-24">
       <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
         01 / Our philosophy
       </p>
@@ -39,5 +43,8 @@ export default function About() {
         </dl>
       </div>
     </section>
+  </Reveal>
+        
+        </>
   );
 }
