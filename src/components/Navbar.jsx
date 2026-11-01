@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import { BRAND } from "../config";
 
 const links = [
@@ -11,6 +11,9 @@ const links = [
 export default function Navbar() {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
+
+  const [hideEnquire, setHideEnquire] = useState(false);
+const lastY = useRef(0);
 
   useEffect(() => {
     const sections = links
@@ -27,10 +30,21 @@ export default function Navbar() {
     );
     sections.forEach((s) => observer.observe(s));
 
-    const onScroll = () => {
-      setScrolled(window.scrollY > 20);
-      if (window.scrollY < 200) setActive("");
-    };
+    
+   const onScroll = () => {
+  const y = window.scrollY;
+
+  setScrolled(y > 20);
+  if (y < 200) setActive("");
+
+  // hide when scrolling down, show when scrolling up
+  if (y > 120 && y > lastY.current) {
+    setHideEnquire(true);
+  } else {
+    setHideEnquire(false);
+  }
+  lastY.current = y;
+};
     onScroll();
     window.addEventListener("scroll", onScroll);
 
@@ -74,11 +88,15 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="#enquiry"
-          className="order-2 rounded-full border border-accent bg-accent px-5 py-2 text-sm font-medium text-ink transition-colors duration-300 hover:bg-transparent hover:text-accent md:order-3"
-        >
-          Enquire
-        </a>
+  href="#enquiry"
+  className={`order-2 rounded-full border border-accent bg-accent px-5 py-2 text-sm font-medium text-ink transition-all duration-300 hover:bg-transparent hover:text-accent md:order-3 ${
+    hideEnquire
+      ? "pointer-events-none translate-y--8px opacity-0"
+      : "translate-y-0 opacity-100"
+  }`}
+>
+  Enquire
+</a>
       </nav>
     </header>
   );
