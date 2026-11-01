@@ -6,7 +6,7 @@ export default function ProgramCard({ id, title, desc, points }) {
   );
 
   return (
-    <article className="flex flex-col rounded-2xl border border-white/10 p-8 transition hover:border-accent/60">
+    <article className="flex flex-col rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition hover:border-accent/60">
       <span className="font-serif text-4xl text-accent">{id}</span>
       <h3 className="mt-6 font-serif text-2xl">{title}</h3>
       <p className="mt-3 opacity-70">{desc}</p>

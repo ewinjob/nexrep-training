@@ -10,11 +10,11 @@ export default function Coaches() {
         Coached by <em className="text-accent">experts.</em>
       </h2>
 
-      <div className="mt-14 grid gap-10 md:grid-cols-2 ">
+      <div className="mt-14 grid gap-10 md:grid-cols-2">
         {coaches.map((c) => (
           <article
             key={c.name}
-            className="rounded-2xl border border-white/10 p-6  transition-colors duration-300 hover:border-accent/60"
+           className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-colors duration-300 hover:border-accent/60"
           >
             {c.photo ? (
              <img

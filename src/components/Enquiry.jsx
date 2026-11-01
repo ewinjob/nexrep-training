@@ -4,7 +4,7 @@ import { EMAIL } from "../config";
 export default function Enquiry() {
   return (
     <section id="enquiry" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="rounded-3xl border border-white/10 bg-white/5 px-8 py-16 md:px-16">
+      <div className="rounded-3xl border border-white/10 bg-white/5 px-8 py-16 backdrop-blur-sm md:px-16">
         <p className="mb-4 text-sm uppercase tracking-widest opacity-60">
           05 / Get started
         </p>

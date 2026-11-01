@@ -1,8 +1,8 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600&display=swap");
 
 @theme {
-  --color-ink: #111310;
+  --color-ink: #1a1a1a;
   --color-paper: #f4f1ea;
   --color-accent: #c8f169;
   --font-serif: "Fraunces", serif;
@@ -10,5 +10,20 @@
 }
 
 html { scroll-behavior: smooth; }
-section { scroll-margin-top: 80px; }
-body { background: var(--color-ink); color: var(--color-paper); font-family: var(--font-sans); }
+section { scroll-margin-top: 110px; }
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+
+
+.site-aura {
+  background:
+    radial-gradient(60% 50% at 10% 0%, rgba(235, 235, 232, 0.28), transparent 60%),
+    radial-gradient(50% 45% at 100% 40%, rgba(200, 241, 105, 0.28), transparent 60%),
+    radial-gradient(55% 45% at 30% 100%, rgba(190, 197, 103, 0.26), transparent 60%),
+    #1a1a1a;
+}

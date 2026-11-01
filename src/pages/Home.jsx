@@ -8,6 +8,7 @@ import Stories from '../components/Stories'
 import Enquiry from '../components/Enquiry'
 import WhatsAppFloat from '../components/WhatsAppFloat'
 import Footer from '../components/Footer'
+import Aura from '../components/Aura'
 
 
 
@@ -16,6 +17,7 @@ function Home() {
     <>
 
         <div>
+          <Aura/>
             <Navbar/>
         </div>
 
