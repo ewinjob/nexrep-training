@@ -22,8 +22,7 @@ body {
 
 .site-aura {
   background:
-    radial-gradient(60% 50% at 10% 0%, rgba(235, 235, 232, 0.28), transparent 60%),
-    radial-gradient(50% 45% at 100% 40%, rgba(200, 241, 105, 0.28), transparent 60%),
-    radial-gradient(55% 45% at 30% 100%, rgba(190, 197, 103, 0.26), transparent 60%),
+    linear-gradient(115deg, transparent 20%, rgba(200, 241, 105, 0.16) 35%, transparent 50%),
+    linear-gradient(115deg, transparent 50%, rgba(244, 241, 234, 0.10) 65%, transparent 80%),
     #1a1a1a;
 }
